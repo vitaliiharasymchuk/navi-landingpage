@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Natus Vincere / Про автора</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="shortcut icon" href="img/natus-vincere.svg" type="image/x-icon">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/video.css">
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <script src="js/script.js"></script>
+    <script src="js/jquery-1.12.4.js"></script>
+    <script src="js/jquery-ui.js"></script>
+</head>
+
+<body>
+    <div class="preloader" id="preloader">
+        <div class="content">
+            <div class="loading">
+                <p>Завантаження</p>
+                <span></span>
+            </div>
+        </div>
+    </div>
+    <header>
+        <div class="header-wrappper">
+            <a href="index.html" class="img-a"><img src="img/natus-vincere.svg" alt="Natus Vincere Logo"></a>
+            <div class="navigation">
+                <ul class="nav-ul">
+                    <li><a href="index.html">Головна</a></li>
+                    <li><a href="squad.html">Склад</a></li>
+                    <li><a href="achievement.html">Досягнення</a></li>
+                    <li><a href="author.html">Про автора</a></li>
+                </ul>
+            </div>
+            <div class="burger" id="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </div>
+    </header>
+    <div class="mobile-navigation">
+        <ul class="mobile-nav-ul" id="mobile-nav-ul">
+            <li><a href="index.html">Головна</a></li>
+            <li><a href="squad.html">Склад</a></li>
+            <li><a href="achievement.html">Досягнення</a></li>
+            <li><a href="author.html">Про автора</a></li>
+        </ul>
+    </div>
+    <div class="main">
+        <div class="main-welcome">
+            <h1><span>Автор цього веб-сайту :</span></h1>
+        </div>
+        <div class="main-wrapper">
+            <div class="squad-main-wrapper">
+                <div class="author">
+                    <img class="simple-photo" src="img/vitaliy_min.png" alt="author"></img>
+                    <div class="simple-text">
+                        <p>Гарасимчук Віталій<br>Студент групи КН-209, кафедри САПР, ІКНІ, НУ ЛП</p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-wrapper">
+                <div id="accordion">
+                    <h3>Кафедра САПР</h3>
+                    <div>
+                        <p>
+                            Кафедра забезпечує підготовку висококваліфікованих фахівців в області програмування,
+                            автоматизованого проектування, розробки складних систем. </p>
+                    </div>
+                    <h3>Кафедра АСУ</h3>
+                    <div>
+                        <p>
+                            Основним науковим напрямком кафедри є розробка методів, моделей, компонентів інформаційних
+                            управляючих систем і технологій. На кафедрі сформовані наукові школи, які ведуть
+                            фундаментальні та прикладні дослідження.
+                        </p>
+                    </div>
+                    <h3>Кафедра СШІ</h3>
+                    <div>
+                        <p>
+                            Місія кафедри: підготувати спеціаліста, який зможе вирішувати алгоритмічно складні задачі,
+                            аналізувати дані великих обсягів, розробляти алгоритми обробки відео, зображень або текстів,
+                            програмувати та керувати роботами.</p>
+                    </div>
+                    <h3>Кафедра ІСМ</h3>
+                    <div>
+                        <p>Кафедра здійснює підготовку фахівців з вищою освітою за освітньо-професійними програмами
+                            таких спеціальностей:
+                            124 "Системний аналіз";
+                            126 "Інформаційні системи та технології".</p>
+                    </div>
+                </div>
+            </div>
+            <div class="map-responsive">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2573.340187420314!2d24.014299227320194!3d49.83606519381719!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1621314672388!5m2!1sru!2sua"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            <div id="SinoptikInformer" style="width:350px;" class="SinoptikInformer type5">
+                <div class="siHeader">
+                    <div class="siLh">
+                        <div class="siMh"><a onmousedown="siClickCount();" class="siLogo" href="https://ua.sinoptik.ua/"
+                                target="_blank" rel="nofollow" title="Погода"> </a>Погода <span id="siHeader"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="siBody">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td class="siCityV" style="width:100%;"><a onmousedown="siClickCount();"
+                                        href="https://ua.sinoptik.ua/погода-львів" title="Погода у Львові"
+                                        target="_blank">
+                                        <div class="siCityName"><span>Львів</span>
+                                    </a>
+                </div>
+                </tr>
+                <tr>
+                    <td style="width:100%;">
+                        <div class="siCityV2"><a onmousedown="siClickCount();"
+                                href="https://ua.sinoptik.ua/погода-львів" title="Погода у Львові" target="_blank">
+                                <div id="siCont0" class="siBodyContent">
+                                    <div class="siLeft">
+                                        <div class="siTerm"></div>
+                                        <div class="siT" id="siT0"></div>
+                                        <div id="weatherIco0"></div>
+                                    </div>
+                                    <div class="siInf">
+                                        <p>вологість: <span id="vl0"></span></p>
+                                        <p>тиск: <span id="dav0"></span></p>
+                                        <p>вітер: <span id="wind0"></span></p>
+                                    </div>
+                                </div>
+                            </a></div>
+                    </td>
+                </tr>
+                </tbody>
+                </table>
+                <div class="siLinks">Погода на 10 днів від <a href="https://ua.sinoptik.ua/погода-львів/10-днів"
+                        title="Погода на 10 днів" target="_blank" onmousedown="siClickCount();">sinoptik.ua</a></div>
+                <div class="siFooter">
+                    <div class="siLf">
+                        <div class="siMf"></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <script type="text/javascript" charset="UTF-8"
+            src="//sinoptik.ua/informers_js.php?title=4&wind=2&cities=303014487&lang=ua"></script>
+        <div class="sign">
+            <a href="author.html">© Гарасимчук Віталій</a>
+        </div>
+    </div>
+</body>
+
+</html>

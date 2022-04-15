@@ -1,0 +1,816 @@
+body {
+    margin: 0;
+}
+
+/* Прокрутка */
+::-webkit-scrollbar {
+    width: 12px;
+    height: 8px;
+    background-color: rgb(22, 22, 22);
+}
+
+::-webkit-scrollbar-thumb {   
+    background-image: linear-gradient(
+        to bottom, 
+        #fff200,
+        #fff200
+      ) ;
+    border-radius: 10px;
+}
+/* Прокрутка */
+
+/* Прелоадер */
+.preloader {
+    position:fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(22, 22, 22);
+    z-index: 10;
+}
+
+ .content {
+	 width: 100%;
+	 height: 100%;
+	 background-color: rgb(22, 22, 22);
+	 display: -webkit-box;
+	 display: -ms-flexbox;
+	 display: flex;
+	 -webkit-box-pack: center;
+	     -ms-flex-pack: center;
+	         justify-content: center;
+	 -webkit-box-align: center;
+	     -ms-flex-align: center;
+	         align-items: center;
+     padding: 100px 0;
+}
+ .content .loading {
+	 width: 320px;
+	 height: 50px;
+	 position: relative;
+}
+ .content .loading p {
+	 top: 0;
+	 padding: 0;
+	 margin: 0;
+	 color: #fff200;
+	 font-family: "Comfortaa", sans-serif;
+     font-weight: 100;
+	 -webkit-animation: text 2s ease both infinite;
+	         animation: text 2s ease both infinite;
+	 font-size: 36px;
+	 letter-spacing: 1px;
+}
+ @-webkit-keyframes text {
+	 0% {
+		 letter-spacing: 1px;
+	}
+	 40% {
+		 letter-spacing: 2px
+	}
+	 80% {
+		 letter-spacing: 1px;
+	}
+	 90% {
+		 letter-spacing: 2px;
+	}
+	 100% {
+		 letter-spacing: 1px;
+	}
+}
+ @keyframes text {
+	 0% {
+		 letter-spacing: 1px;
+	}
+	 40% {
+		 letter-spacing: 2px
+	}
+	 80% {
+		 letter-spacing: 1px;
+	}
+	 90% {
+		 letter-spacing: 2px;
+	}
+	 100% {
+		 letter-spacing: 1px;
+	}
+}
+ .content .loading span {
+	 background-color: #fff200;
+	 border-radius: 50px;
+	 display: block;
+	 height: 16px;
+	 width: 100%;
+	 bottom: -50px;
+	 position: absolute;
+	 -webkit-animation: loading 0.7s ease both infinite;
+	         animation: loading 0.7s ease both infinite;
+}
+
+ @-webkit-keyframes loading {
+	 0% {
+		 width: 0;
+	}
+    10% {
+        width: 10%;
+    }
+    20% {
+        width: 20%;
+    }
+    30% {
+        width: 30%;
+    }
+	40% {
+		width: 40%;
+	}
+    50% {
+        width: 50%;
+    }
+    60% {
+        width: 60%;
+    }
+    70% {
+        width: 70%;
+    }
+	80% {
+		width: 80%;
+	}
+    90% {
+        width: 90%;
+    }
+}
+
+ @keyframes loading {
+	 0% {
+		 width: 0;
+	}
+    10% {
+        width: 10%;
+    }
+    20% {
+        width: 20%;
+    }
+    30% {
+        width: 30%;
+    }
+	40% {
+		width: 40%;
+	}
+    50% {
+        width: 50%;
+    }
+    60% {
+        width: 60%;
+    }
+    70% {
+        width: 70%;
+    }
+	80% {
+		width: 80%;
+	}
+    90% {
+        width: 90%;
+    }
+}
+/* Прелоадер */
+
+/* Header */
+header {
+    background-color: rgb(22, 22, 22);
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+header .header-wrappper {
+    font-family: 'Comfortaa', cursive;
+    background-color: rgb(22, 22, 22);
+    width: 75%;
+    position: relative;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 20px 20px;
+    min-height: 90px;
+    z-index: 0;
+}
+header .header-wrappper .img-a {
+    max-width: 20%;
+    min-width: 100px;
+    -webkit-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+header .header-wrappper .img-a img {
+    max-width: 100%;
+    min-width: 100px;
+    -webkit-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+header .header-wrappper img:hover {
+    -webkit-transform: scale(0.9);
+        -ms-transform: scale(0.9);
+            transform: scale(0.9);
+}
+header .header-wrappper .mobile-nav-ul {
+    display: none;
+}
+header .header-wrappper .nav-ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+header .header-wrappper .nav-ul a {
+    position: relative;
+    display: block;
+    padding:10px;
+    color:  #fff200;
+    border: 1px solid #fff200;
+    border-radius: 10px;
+    text-decoration: none;
+    -webkit-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+header .header-wrappper .nav-ul a:hover {
+    color:#000;
+    background: #fff200;
+}
+
+header .header-wrappper .nav-ul li {
+    padding-left: 25px;
+    font-size: 26px;
+    font-weight: 200;
+}
+/* Header */
+
+/* Burger */
+.burger {
+    display: none;
+    cursor: pointer;
+}
+.burger div {
+    width: 30px;
+    height: 3px;
+    margin: 7px;
+    background: #fff200;
+    -webkit-transition: all 0.01s ease;
+    -o-transition: all 0.01s ease;
+    transition: all 0.01s ease;
+}
+
+.mobile-nav-ul {
+    display: none;
+}
+.mobile-nav-ul-active {
+    display: none;
+}
+.mobile-navigation {
+    background-color:rgb(22, 22, 22);
+}
+/* Burger */
+
+/* Main */
+.main {
+    font-family: 'Comfortaa', cursive;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    background-color: rgb(22, 22, 22);
+}
+
+.main-welcome, .main-highlight {
+    width: 100%;
+    background-color: rgb(22, 22, 22);
+    color: rgb(211, 211, 211);
+    padding: 50px 0;
+    text-align: center;
+    font-size: 35px;
+}
+
+.main-welcome span,.main-highlight span{
+    margin-top: 20px;
+    font-size: 55px;
+    display: block;
+    color: #fff200;
+}
+
+
+.main-welcome p {
+    margin-top: 15px;
+    font-size: 20px;
+    font-style: italic;
+}
+
+.main-wrapper {
+    width: 80%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+
+.main-photo img {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    max-width: 100%;
+    min-width: 250px;
+    border-width: 10px;
+    border-style: solid;
+    -o-border-image: 
+    -o-linear-gradient(
+      top, 
+      rgba(0, 0, 0, 0), 
+      #fff200,
+      rgba(0, 0, 0, 0)
+    ) 1 100%;
+       border-image: 
+    -webkit-gradient(
+      linear, 
+      left top, left bottom, 
+      from(rgba(0, 0, 0, 0)), 
+      color-stop(#fff200),
+      to(rgba(0, 0, 0, 0))
+    ) 1 100%;
+       border-image: 
+    linear-gradient(
+      to bottom, 
+      rgba(0, 0, 0, 0), 
+      #fff200,
+      rgba(0, 0, 0, 0)
+    ) 1 100%;
+}
+
+.main .sign {
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+.main .sign a{
+    font-size: 30px;
+    color: #fff200;
+    text-decoration: none;
+}
+
+/* Main */
+
+/*Стилі для складу*/
+
+.squad-main-wrapper {
+    width: 80%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+.squad-main-wrapper div {
+    margin-top: 50px;
+    font-size: 36px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: #fff200;
+}
+
+
+.squad-main-wrapper .simple-text {
+    text-shadow: 1px 1px #000000;
+    margin-left: 100px;
+}
+.squad-main-wrapper .boom-text {
+    text-shadow: 1px 1px #000000;
+    margin-left: 100px;
+}
+.squad-main-wrapper .flamie-text {
+    text-shadow: 1px 1px #000000;
+    margin-left: 100px;
+}
+
+
+
+.squad-main-wrapper .electronic {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+}
+.squad-main-wrapper .perfecto {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+}
+.squad-main-wrapper .bit {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+}
+
+
+.squad-main-wrapper .electronic-text {
+    text-shadow: 1px 1px #000000;
+    margin-right: 100px;
+}
+.squad-main-wrapper .perfecto-text {
+    text-shadow: 1px 1px rgb(0, 0, 0);
+    margin-right: 100px;
+}
+.squad-main-wrapper .bit-text {
+    text-shadow: 1px 1px #000000;
+    margin-right: 100px;
+}
+
+
+.squad-main-wrapper img{
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    max-width: 100%;
+    min-width: 120px;
+    border-width: 10px;
+    border-style: solid;
+    -o-border-image: 
+    -o-linear-gradient(
+      top, 
+      rgba(0, 0, 0, 0), 
+      #fff200,
+      rgba(0, 0, 0, 0)
+    ) 1 100%;
+       border-image: 
+    -webkit-gradient(
+      linear, 
+      left top, left bottom, 
+      from(rgba(0, 0, 0, 0)), 
+      color-stop(#fff200),
+      to(rgba(0, 0, 0, 0))
+    ) 1 100%;
+       border-image: 
+    linear-gradient(
+      to bottom, 
+      rgba(0, 0, 0, 0), 
+      #fff200,
+      rgba(0, 0, 0, 0)
+    ) 1 100%;
+ }
+
+/*Стилі для складу*/
+
+/*Стилі для досягнень*/
+
+.achiev-main-wrapper {
+    width: 80%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+
+.achiev-main-wrapper div {
+    font-size: 36px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+.achiev-main-wrapper .tournament {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+}
+
+.achiev-main-wrapper .tournament-text {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    font-size: 32px;
+    color: rgb(211, 211, 211);
+    text-shadow: 1px 1px #000000;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+.achiev-main-wrapper .tournament-text span {
+    color: #fff200;
+}
+.achiev-main-wrapper .tournament-text p {
+    font-size: 26px;
+    text-align: center;
+}
+
+.achiev-main-wrapper img{
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    max-width: 100%;
+    min-width: 280px;
+    border-width: 10px;
+    border-style: solid;
+    -o-border-image: 
+    -o-linear-gradient(
+      top, 
+      rgba(0, 0, 0, 0), 
+      #fff200,
+      rgba(0, 0, 0, 0)
+    ) 1 100%;
+       border-image: 
+    -webkit-gradient(
+      linear, 
+      left top, left bottom, 
+      from(rgba(0, 0, 0, 0)), 
+      color-stop(#fff200),
+      to(rgba(0, 0, 0, 0))
+    ) 1 100%;
+       border-image: 
+    linear-gradient(
+      to bottom, 
+      rgba(0, 0, 0, 0), 
+      #fff200,
+      rgba(0, 0, 0, 0)
+    ) 1 100%;
+ }
+ 
+/*Стилі для досягнень*/
+
+/*Стилі для автора*/
+
+.squad-main-wrapper .author img{
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    max-width: 80%;
+    min-width: 120px;
+    border-width: 10px;
+    border-style: solid;
+    -o-border-image: 
+    -o-linear-gradient(
+      top, 
+      rgba(0, 0, 0, 0), 
+      #fff200,
+      rgba(0, 0, 0, 0)
+    ) 1 100%;
+       border-image: 
+    -webkit-gradient(
+      linear, 
+      left top, left bottom, 
+      from(rgba(0, 0, 0, 0)), 
+      color-stop(#fff200),
+      to(rgba(0, 0, 0, 0))
+    ) 1 100%;
+       border-image: 
+    linear-gradient(
+      to bottom, 
+      rgba(0, 0, 0, 0), 
+      #fff200,
+      rgba(0, 0, 0, 0)
+    ) 1 100%;
+ }
+
+ .squad-main-wrapper .author {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+ }
+
+ .squad-main-wrapper .author .simple-text {
+     margin-top: 0;
+     margin-left: 100px;
+ }
+ .squad-main-wrapper .author .simple-text p{
+    line-height: 1.2;
+}
+.accordion-wrapper {
+    font-size: 28px;
+    max-width: 80%;
+    margin-top: 50px;
+}
+.map-responsive {
+    margin-top: 100px;
+}
+.SinoptikInformer {
+    margin-top: 50px;
+    max-width: 80%;
+}
+/*Стилі для автора*/
+
+
+
+
+@media screen and (max-width :1150px) {
+    body { 
+        overflow-x: hidden;
+    }
+    .content .loading {
+    width: 320px;
+	height: 250px;
+	position: relative;
+    }
+    .burger {
+       display: inline;
+       margin-left: 31%;
+    }
+    .burger:active {
+        background: #fff200;
+    }
+    .burger:active div {        
+       background: #000;
+    }
+    header .header-wrappper .nav-ul {
+        display: none;
+    }
+    header .header-wrappper {
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    }
+
+    .main-welcome span,.main-highlight span,.achiev-main-wrapper .tournament-text {
+        font-size: 30px;
+    }
+
+    .mobile-nav-ul-active {
+        width: 79%;
+        margin: 0 auto;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        font-family: 'Comfortaa', cursive;
+        font-size:30px;
+        padding: 20px 0;
+    }
+    .mobile-nav-ul-active a{
+        width: 92%;
+        position:relative;
+        display: block;
+        padding:10px;
+        color:  #fff200;
+        border: 1px solid #fff200;
+        border-radius: 10px;
+        text-decoration: none;
+    }
+    .mobile-nav-ul-active a:hover {
+        color:#000;
+        background: #fff200;
+    }
+    .mobile-nav-ul-active li {
+        font-weight: 100;
+        margin-top: 20px;
+    }
+    .main-wrapper {
+        width: 100%;
+    }
+    .accordion-wrapper {
+        font-size: 16px;
+    }
+    
+    .main .sign a{
+        font-size: 20px;
+    }
+    .main .sign {
+        margin-top: 100px;
+    }
+
+    /*Стилі для складу*/
+
+    .squad-main-wrapper {
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    }
+    .squad-main-wrapper div {
+        margin-top: 0;
+    }
+    .squad-main-wrapper .simple-text  {
+        font-size: 20px;
+        margin-left: 40px;
+    }
+    .squad-main-wrapper .boom-text {
+        font-size: 20px;
+        margin-left: 40px;
+    }
+    .squad-main-wrapper .flamie-text {
+        font-size: 20px;
+        margin-left: 40px;
+    }
+
+    .squad-main-wrapper .electronic-text {
+        margin-right: 40px;
+        font-size: 20px;
+    }
+    .squad-main-wrapper .perfecto-text {
+        margin-right: 40px;
+        font-size: 20px;
+    }
+    .squad-main-wrapper .bit-text {
+        margin-right: 40px;
+        font-size: 20px;
+    }
+  
+    /*Стилі для складу*/
+
+    /*Стилі для автора*/
+    .squad-main-wrapper .author .simple-text p{
+        font-size: 36px;
+        margin-top: 0;
+        margin-left: 0px;
+    }
+    
+    /*Стилі для автора*/
+}
+@media screen and (max-width :1000px) {
+    .squad-main-wrapper .author .simple-text p{
+        font-size: 30px;
+    }
+}
+@media screen and (max-width :800px) {
+    .squad-main-wrapper .author {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+    }
+    .squad-main-wrapper .author .simple-text {
+        margin-left: 0;
+    }
+    .squad-main-wrapper .author .simple-text p{
+        font-size: 20px;
+        text-align: center;
+    }
+}
